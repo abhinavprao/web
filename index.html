@@ -1,9 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Abhinav's website</title>
+  <meta name="description" content="Abhinav's website">
+  <meta name="author" content="AbhinavRao23">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">  
+    
+    <!--buttons -->
+    <div class="row">
+       <div class = "ten columns">
+        <button id = "draw" type="button" class="top-button" onclick="drawToggle()">draw</top-button>
+        <button id = "random" type="button" class="top-button" onclick="randomRestart()">surprise me!</top-button>
+       </div>
+       <div class = "two columns">
+        <a type="button" class="top-button button-primary" href="https://github.com/AbhinavRao23" target="_blank" >GITHUB</a>
+        <a type="button" class="top-button button-primary" href="https://www.linkedin.com/in/abhinavrao1/"
+        target="_blank">linkedin</a>
+       </div>
+    </div>
+
+    <!-- conway -->
+    <div class="row" >
+        <canvas id = "gameCanvas" width = "1000%" height = "300"></canvas>
+    </div>
+    <script type="text/javascript" src="js/conwayLife.js"></script>
+    
+    <!-- title and intro -->
+    <div class="row">
+      <div class = "header">
+        <h1>
+        <b>Abhinav Rao's website</b>
+      </h1>
+      <p>Hello, I am an engineer working in industrial research and development, specifically, automotive connectivity and data-based solutions. This is my website. Hopefully, I will find things to put in it.</p>
+      </div>
+    </div>
+    
+    <!-- categories -->
+    <div class="row">
+      <div class="header" style="margin-top: 2rem;">
+        <div class="one-third column">
+        <li>Proffessional experience</li>
+      </div>
+      <div class="one-third column">
+        <li>Academic experience</li>
+      </div>
+      <div class="one-third column">
+        <li>Essays/ Notes/ Archives</li>
+      </div>
+      </div>
+    </div>
+    <!-- form to email -->
+    <div class="row header">
+      
+    </div>
+  </div>	  
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
