@@ -40,6 +40,7 @@ window.onload = function() {
 		var nextFrame = makeNextFrame(frame);
 		drawRect(0,0,canvas.width,canvas.height,'white');
 		drawFrame(frame,cellSize,cellColor);
+		firstStart=false;
 		if (start){
 		frame = nextFrame;
 		// drawFrame(nextFrame,cellSize,cellNextColor);
@@ -67,11 +68,26 @@ function mousePosition(evt){
 			y:mouseY};
 }
 
-function makeFrame(width, height, cellSize,empty=false){
+function makeFrame(width, height, cellSize,empty=false, startFrame = false){
 	let random = (empty?0:1);
 	let rows = height/cellSize;
 	let cols = width/cellSize;
 	let frameArr = [];
+	if (startFrame==true){
+		for(let i=0;i<rows;i++){
+		frameArr[i] = [];
+		for(let j=0;j<cols;j++){
+			if (j%3==0){
+				frameArr[i][j]=1;	
+			}
+			else{
+				frameArr[i][j]=0
+			}
+			
+		}
+	}
+	}
+
 	for(let i=0;i<rows;i++){
 		frameArr[i] = [];
 		for(let j=0;j<cols;j++){
