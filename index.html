@@ -61,29 +61,233 @@
         <h1>
         <b>Abhinav Rao's website</b>
       </h1>
-      <p>Hello, I am a masters' student at Purdue University, learning applied mathematics, deep learning and bayesian data analysis to model physical systems.</p>
+      <p>Hello, I am a masters' student at Purdue University. I am learning and applying fundamentals of bayesian statistics, applied mathematics and deep learning towards effective and physically coherent modeling of dynamical fields. Previously I have worked on and shipped products in the domain of automotive design, robotics and predictive diagnostics for connected vehicles.</p>
       </div>
     </div>
     
-    <!-- categories -->
-    <div class="row header" style="margin-top: 2rem;">
-        <a class="button big" href="./experience.html">Experience</a>
-        <a class="button big" href="./notes.html">Notes</a>
+    <div class="row header" style="margin-bottom: 2rem;">
+      <h2>Timeline</h2>
     </div>
 
-    <!-- <div class="row header">
-      <h5>Jump to?</h5>
+    <div class = "row header">
+      <h5><a href="#gradschool">Purdue</a>  &#x2022  <a href="#bosch">Bosch</a>  &#x2022  <a href="#undergrad">NITK</a> &#x2022  <a href="#nitkracing">NITKRacing</a>  &#x2022 <a href="#iisc">IISc</a> &#x2022  <a href="#hal">HAL</a>  &#x2022  <a href="#misc">Others</a></h5>
     </div>
- -->
-    <!-- <div class="row">
-      <div class="six columns">
-        <a href="#graduate school"><img src="images/flexdesk.jpg"></a>
+
+    <!-- content -->
+    <div class="row header">
+      <h4 id="gradschool">Purdue University</h4>
+      <h6>August 2022 to Present</h5>
+    </div>
+
+    <div class="row">
+      <div class="four columns">
+        <a href="https://www.purdue.edu/" target="_blank">
+          <img src='images/purdue.png' alt='logo of Purdue University' />
+        </a>  
       </div>
-      <div class="six columns">
-        <a href="#professional"><img src="images/boschdesk.jpg"></a>
+
+      <div class="three columns">
+        <a href="https://predictivesciencelab.org/" target="_blank">
+          <img src='images/predictivesciencelab.png' alt='logo of Predictive Science Lab' />
+        </a> 
       </div>
-       -->
-    <!-- </div> -->
+
+      <div class="five columns">
+        <a href="https://investor.lilly.com/news-releases/news-release-details/lilly-and-purdue-university-announce-strategic-research" target="_blank">
+          <img src='images/lilly.png' alt='log of Eli Lilly'/>
+        </a> 
+      </div>
+    </div>
+    
+    
+    <div class="row">  
+      <p>
+        At Purdue, I do my reseach as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of applied mathematics and physics. This involves leveraging theory from physics and mathematics to define model structures that can be effectively conditioned on data/measurements while respecting fundamental laws of nature. 
+      </p>
+
+      <p>
+        My topics involve producing neural network-driven parsimonious surrogates for complex spatio-temporal fields. This domain of 'physics-informed machine learning' has shown rapid progress in the last decade alongside large-scale adoption and development of efficient deep learning tools such as XLA and Automatic Gradients. But there is significant work to be done in leveraging specific models that respect causality, fundamental symmetries and effectively combine multiple modalities of measurements. I hope to contribute to this movement. I usually write in python using PyTorch and Jax for developing the models, and run the programs on Purdue's superclusters such as <a href="https://www.rcac.purdue.edu/compute/bell" target="_blank">Bell.</a>
+      </p>
+
+      <p>
+        I am particularly grateful to Eli Lilly Co. and their research collaboration with Purdue for funding my graduate study and providing a framework for effective research that is valuable to the community. I particulary within the section specializing in improving the effectiveness of injectable drug-delivery which is a perfect domain for physics-informed machine learning and uncertainty quantification given the various complexity of human body and the noisy sparse measurements, relative to mainstream AI research problems.   
+      </p>
+
+      <p>
+        My plan of study during my graduate school revolves around courses of statistics and machine learning. As a part of the machine learning course I wrote a Conditional-GAN model and a custom FID protocol to  quantify the sensitivity of the model against hyper-parameters. The code can be found <a href="https://github.com/AbhinavRao23/ece50024_finals"  target="_blank">here.</a> Courses, at glance:
+      </p>
+
+      <ul>
+        <li>ME 58100: Numerical Methods </li>
+        <li>STAT 51600: Basic Probability & Applications</li>
+        <li>STAT 52900: Applied Decision Theory & Bayesian Statistics </li>
+        <li>ECE 50024: Machine Learning </li>
+        <li>MA 53200: Elements of Stochastic Processes </li>
+        <li>ME 53900: Introduction to Scientific Machine Learning </li>
+        <li>ME 69700ML: Topics in Advanced Scientific Machine Learning </li>
+      </ul>
+    </div>
+
+    <div class="row header">
+      <h4 id="bosch">Bosch Ltd.</h4>
+      <h6>June 2019 to August 2022</h6>
+    </div>
+
+    <div class="row">
+      <div class="six columns">
+        <a href="https://www.bosch.com/research/" target="_blank">
+          <img src='images/bosch.jpg' alt='logo of Bosch' />
+        </a> 
+        
+      </div>
+
+      <div class="six columns">
+        <a href="https://www.bosch-mobility.com/en/solutions/two-wheeler-and-powersports/" target="_blank">
+          <img src='images/boschconnectivity.jpeg' alt='2-Wheeler Connectivity' />
+        </a> 
+        
+      </div>
+    </div>
+    
+    <div class="row">  
+      <a id = "professional"></a>
+      <p>
+        I worked for 3+ years at Bosch's research center: Technical Center India. I started as an intern, then a trainee and finally a system engineer/asst. manager. As an intern I was introduced to cloud-connected automobiles. Since this domain required expertise in multiple technology stacks - automotive systems, telemetry, cloud and data science; my training was tailored towards such expertise.  As a trainee I worked on coordinating software requirements for digitization in the supply chain domain. Then I worked on electric vehicles and their firmware validation, before finally transitioning to my longest role as a research engineer developing automotive connectivity software. This bottom-up transition from systems to firmware to software was essential towards setting a foundation for my data science journey.
+      </p>
+
+      <p>
+        During my time in the connectivity research team, our small team of inter-disciplinary engineers tasked with the end-to-end development and validation of predictive diagnostic solutions for motorcycles. This involved developing software that when supplied with data from the specific vehicle could analyse it and assert the vehicles' health and predict failures. I was involved with making a testable platform of vehicle fleet, a communication infrastructure with custom protocols, a cloud driven data collection and analysis system and the solutions themselves. Our team worked with vehicles of different make, developed custom hardware for data collection and specifically wrote ML models in the form of cloud-APIs and apps to analyze collected data and display it to the user.
+      </p>
+
+      <p>
+        I collaborated on a variety of projects within this connectivity project such as engine oil monitoring, vehicle battery monitoring and air filter monitoring, but personally led the development of two major solutions: sensor-less tire pressure monitoring and intelligent range estimation. These programs involved collecting time-series CAN data, utilizing efficient statistical methods ranging from Kalman filters to Neural Networks to make accurate judgements about the state of the vehicle. These works gave rise to accurate monitoring of vehicle health and quantification of complex sequences such as driving style and aggression. This further led to four patents in this area, 3 published by July 2022 (Application Numbers. 202241018611, 202141038618, 202141019724).
+      </p>
+    </div>
+
+    <div class="row header">
+      <h4 id="undergrad">National Institute of Technology Karnataka</h4>
+      <h6>July 2015 - April 2019</h6>
+    </div>
+
+    <div class="row">
+      <div class="four columns">
+        <a href="https://www.nitk.ac.in/" target="_blank">
+          <img src='images/nitk.png' alt='logo of NITK' />
+        </a> 
+        
+      </div>
+
+      <div class="eight columns">
+        <a href="https://mech.nitk.ac.in/course/robotic-systems" target="_blank">
+          <img src='images/thesis.jpg' alt='Thesis robotics project' />
+        </a> 
+        
+      </div>
+    </div>
+    
+    <div class="row">  
+
+      <p>
+        As a mechanical engineering student at National Institute of Techology Karnataka, my academic journey started with dabbling in dynamics & design and then gradually transitioning towards controls, system engineering and robotics. During my four years at NITK, I tried a lot of different projects while only diving deeply mostly into automotives and robotics. This includes an academic inclination towards intelligent systems, attending the system engineering conference INCOSE 2017 and an unsuccessful attempt at establishing a student satellite team at NITK while colloaborating with ISRO (Indian Space Research Organization). Every project taught me a little about engineering fundamentals and a lot about team management. 
+      </p>
+
+      <p>
+        <b>Final Thesis Project:</b> For my final bachelors' thesis I and a team of three other students chose to work on a robotics topic. The advent of 3-D printing and small manipulators motivated us to develop and optimize a 3-PRRR manipulator (in the image above). This included design and optimization in both the hardware and the software. We managed to display strong results to our advisor with good position control and weight savings in the physical design. 
+      </p>
+
+      <p>
+        <b>Smart City Project:</b> Another major project that I was happy to be a part of, was a smart city experiment, in which 50 students collaborated over 2 months to make a remotely controlled and automated smart city model with smart-buildings and vehicles with automated and prioritized functionalities. This project included mechatronic design, sensor fusion, wireless communication protocols, path planning, FMEA and writing efficient code.  
+        <a href="https://csd.nitk.ac.in/" target="_blank"><img src="images/smartcity.jpg" alt="a miniature smart city model"></a>
+      </p>
+
+      <p>
+        Specialized courses at a glance:
+        <ul>
+          <li>ME252 - 2017  Computer Aided Engineering</li>
+          <li>ME322 - 2017  Automatic Control Engineering</li>
+          <li>ME320 - 2018  Automobile Engineering</li>
+          <li>ME827 - 2018  Theory And Practice Of Sensors And Actuators</li>
+          <li>ME865 - 2018  Robotics Mechanics and Control</li>
+          <li>ME426 - 2018  Applied Computational Methods In Mechanical Sciences</li>
+          <li>ME866 - 2018  Optimization Techniques</li>
+          <li>MA204 - 2019  Linear Algebra And Matrices</li>
+          <li>ME832 - 2019  Intelligent Systems</li>
+        </ul>
+      </p>
+      
+
+    </div>
+
+    <div class="row header">
+      <h4 id="nitkracing">NITKRacing</h4>
+      <h5>January 2016 to April 2019</h5>
+    </div>
+
+    <div class="row">
+      <a href="https://www.linkedin.com/company/nitkracing/" target="_blank">
+          <img src='images/nitkracing.jpg' alt='image of NITKRacing members with their car' />
+      </a> 
+      <p>
+        One of the most involving and rewarding experiences I had in college was my time with our <a href="https://en.wikipedia.org/wiki/Formula_Student" target="_blank">'Formula Student'</a> team, NITKRacing. NITKRacing is NITK's answer to the Formula Student question: Can a bunch of students make a Formula One style single seater performance car? Based on a rigorous rulebook, students are challenged to design, manufacture and (mock) sell a weekend racecar at competitions around the world. Formula Student is not only a excrutiatingly intensive student project but also grounds for valuable research, innovative solutions and even top spot for recruitments.
+      </p>
+
+      <p>
+        I was a part of NITKRacing from 2016 to 2019 during which I participated in 3 events. In these events I was exposed to automotive engineering, industry experts, and invaluable team building experience. The design process encompassed everything from fancy FEM analysis for every manufactured component to fundamental mathematical models that the entire car was based on. Initially being heavily involved with part design such as pedals, uprights, wheel hubs, etc.; over time I slowly migrated towards higher lever system design, especially within vehicle dynamics. I was also elected <b>captain</b> of the team for year 2018-2019.
+      </p>
+    </div>
+
+    <div class="row header">
+      <h4 id="iisc">Indian Institute of Science - Summer Intern</h4>
+      <h5>May 2018 - June 2018</h5>
+    </div>
+
+    <div class="row">
+      <div class="four columns">
+        <a href="https://iisc.ac.in/" target="_blank">
+          <img src='images/iisc.jpeg' alt='image of NITKRacing members with their car' />
+        </a> 
+        
+      </div>
+
+      <div class="eight columns">
+        <a href="https://mecheng.iisc.ac.in/people/satish-v-kailas/" target="_blank">
+          <img src='images/iiscdesign.jpg' alt='image of NITKRacing members with their car' />
+        </a> 
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <p>
+        I was introduced to Indian Institute of Science as an intern trying to get some research experience. I had the the opportunity to work under the guidance of Prof. Satish Vasu Kailas on a short but interesting topic of designing in-situ testing rigs. Particularly I was asked to design a miniature fatigue testing rig and analze its failure modes for the SIAM lab for its experiments. Fatigue based design is a huge domain that spans mechanical design, civil engineering and structural engineering.
+      </p>
+
+      <p>
+        I started by first understanding the theoretical foundations of fatigue, writing down requirements, making prototype CAD models, analzing them in ANSYS and evaluating them against other designs. This meant designing to include available hardware like motors and sensors and predicting most crucial failure modes. I am very grateful for Prof. Kailas' guidance during the entire process.
+      </p>
+    </div>
+
+    <div class="row header">
+      <h4 id="hal">Hindustan Aeronautic Ltd. - Winter Intern</h4>
+      <h5>November 2017 - December 2017</h5>
+    </div>
+
+    <div class="row">
+      <p>
+        During the winter of '17 I managed to squeeze a short but insightful internship at HAL Aircraft Division. This was a month-long stint that involved a thorough tour and deep-dive into various manufacturing and maintenance facilities at HAL's Aircraft Division at Bangalore. A group of students were exposed to various processes and materials and finally had to write an industrial report for our respective schools.
+      </p>
+    </div>
+
+    <div class="row header">
+      <h4 id="misc">Miscellaneous</h4>
+    </div>
+
+    <div class = "row">
+      <p>
+        <b>Sensor-Fusion and Position Estimation in IPhones:</b> Utilizing camera feed + computer vision, GPS data and IMU data, we developed a system to determine position of other paired iPhones in a 3-D environment. This is done within a probablistic framework while quantifying uncertainty.
+      </p>
+    </div>
+  
     
     
   </div>	
