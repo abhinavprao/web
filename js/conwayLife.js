@@ -43,7 +43,7 @@ window.onload = function() {
 		firstStart=false;
 		if (start){
 		frame = nextFrame;
-		// drawFrame(nextFrame,cellSize,cellNextColor);
+		drawFrame(nextFrame,cellSize,cellNextColor);
 		}
 	}, 1000/ fps);	
 }
