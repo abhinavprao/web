@@ -91,7 +91,7 @@ function makeFrame(width, height, cellSize,empty=false, startFrame = false){
 	for(let i=0;i<rows;i++){
 		frameArr[i] = [];
 		for(let j=0;j<cols;j++){
-			frameArr[i][j]= Math.round(Math.random()-0.3)*random;
+			frameArr[i][j]= Math.round(Math.random()- 0.2)*random;
 		}
 	}
 	return frameArr;
