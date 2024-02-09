@@ -51,7 +51,7 @@
 
     <!-- conway -->
     <div class="row" >
-        <canvas id = "gameCanvas" width = "1000%" height = "300"></canvas>
+        <canvas id = "gameCanvas" width = "1000%" height = "400"></canvas>
     </div>
     <script type="text/javascript" src="js/conwayLife.js"></script>
     
@@ -61,7 +61,7 @@
         <h1>
         <b>Abhinav Rao's website</b>
       </h1>
-      <p>Hello, I am a masters' student at Purdue University. I am learning and applying fundamentals of bayesian statistics, applied mathematics and deep learning towards physically coherent modeling of fields. Previously I have worked on and shipped products in the domain of automotive software, robotics and predictive diagnostics for cloud-connected vehicles.</p>
+      <p>Hello, I am a masters' student at Purdue University. I am specializing in physics-informed machine learning and applying it in bio-medical problem statements. Previously I have worked on and shipped products in the domain of automotive software, robotics and predictive diagnostics for cloud-connected vehicles.</p>
       </div>
     </div>
 
@@ -98,21 +98,21 @@
     
     <div class="row">  
       <p>
-        At Purdue, I conduct my reseach as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of machine learning and physics. This involves leveraging theory from physics and mathematics to define model structures that can be effectively conditioned on data/measurements. 
+        At Purdue, I conduct my reseach as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of machine learning and physics. This involves leveraging theory from physics and mathematics to define model structures that can be effectively conditioned on data/measurements. Projects:
       </p>
 
       <p>
-        Projects: My topics involve producing neural network-driven parsimonious surrogates for complex spatio-temporal fields/ PDEs. This domain of 'physics-informed machine learning' has shown rapid progress in the last decade alongside large-scale adoption and development of efficient deep learning tools such as XLA and Automatic Gradients. But there is significant work to be done in leveraging specific models that respect causality, fundamental symmetries and effectively combine multiple modalities of measurements. I hope to contribute to this effort. I usually write in python using PyTorch and Jax (Flax/ Equinox) for developing the models, and run the programs on Purdue's superclusters such as <a href="https://www.rcac.purdue.edu/compute/bell" target="_blank">Bell.</a>
+        <b>Physics informed Machine Learning:</b> My topics involve producing neural network-driven parsimonious surrogates for complex spatio-temporal fields/ PDEs. This domain of 'physics-informed machine learning' has shown rapid progress in the last decade alongside large-scale adoption and development of efficient deep learning tools such as XLA and Automatic Gradients. But there is significant work to be done in leveraging specific models that respect causality, fundamental symmetries and effectively combine multiple modalities of measurements. I hope to contribute to this effort. I usually write in python using PyTorch and Jax (Flax/ Equinox) for developing the models, and run the programs on Purdue's superclusters such as <a href="https://www.rcac.purdue.edu/compute/bell" target="_blank">Bell.</a>
       </p>
       <a>
           <img src='images/prediction.gif' alt='predictions from surrogate' />
       </a> 
       <p>
-        I am particularly grateful to Eli Lilly Co. and their research collaboration with Purdue for funding my graduate study and providing a framework for effective research that is valuable to the community. I particulary within the section specializing in improving the effectiveness of injectable drug-delivery which is a perfect domain for physics-informed machine learning and uncertainty quantification given the various complexity of human body and the noisy sparse measurements, relative to mainstream AI research problems.   
+        I am particularly grateful to Eli Lilly Co. and their research collaboration with Purdue for funding my graduate study and providing a framework for effective research that is valuable to the community. My research is geared towards improving the effectiveness of injectable drug-delivery which is a perfect domain for physics-informed machine learning and uncertainty quantification given the various complexity of human body and the noisy measurements, relative to most AI research problems.   
       </p>
 
       <p>
-        My plan of study during my graduate school revolves around courses of statistics and machine learning. As a part of the machine learning course I wrote a Conditional-GAN model and a custom FID protocol to  quantify the sensitivity of the model against hyper-parameters. The code can be found <a href="https://github.com/AbhinavRao23/ece50024_finals"  target="_blank">here.</a>
+        As a part of the machine learning course I wrote a <a href="https://github.com/AbhinavRao23/ece50024_finals"  target="_blank">Conditional-GAN model</a> and a custom FID protocol to  quantify the sensitivity of the model against hyper-parameters.
       </p>
 
       <p>
@@ -154,15 +154,42 @@
     <div class="row">  
       <a id = "professional"></a>
       <p>
-        I worked for 3+ years at Bosch's research center: Technical Center India. I started as an intern, then a trainee and finally a system engineer/asst. manager. As an intern I was introduced to cloud-connected automobiles. Since this domain required expertise in multiple technology stacks - automotive systems, telemetry, cloud and data science; my training was tailored towards such expertise.  As a trainee I worked on coordinating software requirements for digitization in the supply chain domain. Then I worked on electric vehicles and their firmware validation, before finally transitioning to my longest role as a research engineer developing automotive connectivity software. This bottom-up transition from systems to firmware to software was essential towards setting a foundation for my data science journey.
+        With over 3 years at Bosch's Technical Center India, I grew from an intern to a system software engineer/assistant manager. My role spanned diverse projects in data science applications, predictive diagnostics, and firmware for electric vehicles, among others.
+      </p>
+      
+      <p>
+        <b>Sensorless Tire Pressure Monitoring:</b><br><br>
+        Passenger cars have long employed indirect tire pressure monitoring, eliminating the need for pressure sensors by estimating levels using wheel speed data. In two-wheelers, 'Indirect' or 'Sensorless' Tire Pressure Monitoring poses challenges due to fewer tires, rounded tire shapes, high wheel cambering, and noisier signals. We addressed challenges by integrating vehicle dynamics fundamentals with efficient data-driven methods.
+        <br><br>
+        This involved applying signal processing algorithms to filter wheel speed data and extracting meaningful information using traditional ML/statistical analysis. The primary challenge was distinguishing tire pressure anomalies from other potential causes which we overcame by using additional models that eliminate alternative possibilities, additionally asserting the tire pressure status only when a statistically confident inference level was reached. This work resulted in two published patents for classification and regression algorithms, with another currently under internal review:
+        <ul>
+          <li>Ref. 202141038618 -  An apparatus and method to determine tire pressure abnormality in a vehicle</li>
+          <li>Ref. 202241018611 -  An apparatus and method for tire pressure abnormality detection in a vehicle.</li>
+        </ul>
+      </p>
+      
+      <p>
+        <b>Intelligent Range Estimation:</b><br>
+        I improved the range estimation software in the <a href="https://www.chetak.com/" target="_blank">Bajaj Chetak</a> electric moped by developing a firmware update. Specifically, I created a software patch to improve identification of extreme driving style changes, implementing corrections to the range estimation regressor. This involved designing a statistical model to quantify driving style and a simulator for comprehensive testing.<br><br>
+        Given the non-deterministic nature of range estimation, I quantified uncertainty in the estimate and established a holistic heuristic to benchmark improvements. This was my first end-to-end project where I worked on the problem definition by interacting with the EV technical team, designed experiments to collect data, developed the software and finally validated it on the vehicle. 
       </p>
 
       <p>
-        During my time in the connectivity research team, our small team of inter-disciplinary engineers tasked with the end-to-end development and validation of predictive diagnostic solutions for motorcycles. This involved developing software that when supplied with data from the specific vehicle could analyse it and assert the vehicles' health and predict failures. I was involved with making a testable platform of vehicle fleet, a communication infrastructure with custom protocols, a cloud driven data collection and analysis system and the solutions themselves. Our team worked with vehicles of different make, developed custom hardware for data collection and specifically wrote ML models in the form of cloud-APIs and apps to analyze collected data and display it to the user.
+        <b>Predictive Diagnostic Platform and API development:</b><br>
+         Bosch being a global leader in automotive systems and the <a href="https://www.bosch.com/stories/the-controller-area-network/" target="_blank">pioneer of CAN</a>, has a jumpstart in the domain of automotive data pipeline. Our team explored the possible use-cases of such data to be processed on the cloud. We particularly focused on predictive diagnostic solutions for cloud-connected motorcycles.<br><br>
+         This included designing a platform of test vehicles with custom sensors for ground-truth, planning a large-scale data collection effort, working with the IT team to set-up a data pipeline (can-json-https-azure) to collect and process data without loss and finally deploying our models as RESTful APIs on the cloud.<br><br>
+         Over the span of two years we had a solid platform to collect data with ground-truth, process it locally, deploy and test algorithms and ship production quality code. We focused on solutions that could predict failures in automotive componets in the engine system, oil systems, batteries, filters, etc. using only CAN-based data with already available stock sensor gamut.
       </p>
-
+      
       <p>
-        I collaborated on a variety of projects within this connectivity project such as engine oil monitoring, vehicle battery monitoring and air filter monitoring, but personally led the development of two major solutions: sensor-less tire pressure monitoring and intelligent range estimation. These programs involved collecting time-series CAN data, utilizing efficient statistical methods ranging from Kalman filters to Neural Networks to make accurate judgements about the state of the vehicle. These works gave rise to accurate monitoring of vehicle health and quantification of complex sequences such as driving style and aggression. This further led to four patents in this area, 3 published by July 2022 (Application Numbers. 202241018611, 202141038618, 202141019724).
+        <b>Other Projects:</b>
+         <ul>
+          <li><b>Rider Metrics:</b> Developed a multi-modal system leveraging vehicle dynamic models and statistical analysis to quantify driving style intricacies to provide user with feedback as a part of Bosch's vehicle app program. This work led to a patent in the domain of braking efficiency estimation: <br> Ref. 202141019724 - A controller and method to determine a braking efficiency of a driver.</li>
+          <li><b>Software Development Cycle Training:</b> Co-ordinated between Bosch, an external assembly company 'IWorkz' and a supply-chain digitization start-up <a href="https://www.stockone.com/" target="_blank">StockOne
+          </a>to digitize an entire assembly line as a three-month training stint. This included communicating and story-boarding expectations and responsibilites of all three sides and finalizing reports & scrum.</li>
+          <li><b>Firmware Validation:</b> Tested and validated safe state protocols in the Bajaj Chetak EV's firmware for its official market release. This included code reviews & debugging (in C++) and actual systems testing on the vehicle.</li>
+          <li><b>Internship Project:</b> Delivered a feasibility report for indirect tire pressure monitoring in two-wheelers which included state-of-the-art literature survey and possible algorithms to identify pressure anomalies while detecting most common failure modes.</li>
+         </ul>
       </p>
     </div>
 
@@ -170,56 +197,48 @@
       <h4 id="undergrad">National Institute of Technology Karnataka</h4>
       <h6>July 2015 - April 2019</h6>
     </div>
-
     <div class="row">
-      <div class="four columns">
+      <div class="six columns">
         <a href="https://www.nitk.ac.in/" target="_blank">
-          <img src='images/nitk.png' alt='logo of NITK' />
+          <img src='images/nitk.png' alt='logo of NITK' class="custom-image"/>
         </a> 
-        
       </div>
 
-      <div class="eight columns">
-        <a href="https://mech.nitk.ac.in/course/robotic-systems" target="_blank">
-          <img src='images/thesis.jpg' alt='Thesis robotics project' />
-        </a> 
-        
+      <div class = "six columns">
+        <p>
+          My time at National Institute of Technology Karnataka involved working with various inter-disciplinary teams. During my undergrad I was particularly interested in teams & building things. I was a part of my college's Formula Student team, worked on various projects at the Center for System Design, briefly worked on a student satellite project, among others.
+        </p>
       </div>
+  
     </div>
-    
-    <div class="row">  
-
+    <div class="row">
+      
       <p>
-        My time at National Institute of Technology Karnataka involved working with various inter-disciplinary teams. During my undergrad I was particularly interested in teams & building things. I was a part of my college's Formula Student team, worked on various projects at the Center for System Design, briefly worked on a student satellite project, among others.
-      </p>
-
-      <p>
-        <b>Final Thesis Project:</b> For my final bachelors' thesis I and a team of three other students chose to work on a robotics project. The advent of 3-D printing and small manipulators motivated us to design and optimize a 3-PRRR manipulator (in the image above). This included design and optimization in both the hardware and the software. We designed the entire structure in-house from scratch. The structural parts were designed through a design - optimization process focusing on improving rigidity while reducing weight. The software was written to get accurate position control of the end-effector using open-source hardware only. In the end we were able to showcase a working model of a 3PRRR manipulator with accurate position control with a simple arm design that was light and stiff enough for intricate applications.
+        <b>Final Thesis Project:</b> For my final bachelors' thesis I and a team of three other students chose to work on a robotics project. The advent of 3-D printing and small manipulators motivated us to design and optimize a 3-PRRR manipulator or a Tripteron. This included design and optimization in both the hardware and the software. We designed the entire structure in-house from scratch. The structural parts were designed through a design - optimization process focusing on improving rigidity while reducing weight. The software was written to get accurate position control of the end-effector using open-source hardware only. In the end we were able to showcase a working model of a 3PRRR manipulator with accurate position control with a simple arm design that was light and stiff enough for intricate applications.
+        <a href="https://mech.nitk.ac.in/course/robotic-systems" target="_blank">
+          <img src='images/thesis.jpg' alt='Thesis robotics project'></a>
       </p>
 
       <p>
         <b>Smart City Project:</b> As a part of the graduate level course ME827 (Theory And Practice Of Sensors And Actuators), 50 students were tasked to use the resources at <a href="https://csd.nitk.ac.in/" target="_blank">Center for System Design</a> at NITK to build a model smart city equipped with multiple buildings and vehicles. The objective of the city model was to completely automate the functionalities of the buildings and the vehicular bots, with prioritization, path planning and remote control through a web-app. From the bottom up, the technical stack in this project involved - mechanical design of components, mechatronic systems, circuit design, communication protocols (i2c & http), R-Pi driven path-planning and prioritization, and finally a GUI to make manual interventions. 
         <a href="https://csd.nitk.ac.in/" target="_blank"><img src="images/smartcity.jpg" alt="a miniature smart city model"></a>
+        <p>
+          <b>Courses, at a glance:</b>
+          <ul>
+            <li>ME252 - 2017  Computer Aided Engineering</li>
+            <li>ME322 - 2017  Automatic Control Engineering</li>
+            <li>ME320 - 2018  Automobile Engineering</li>
+            <li>ME827 - 2018  Theory And Practice Of Sensors And Actuators</li>
+            <li>ME865 - 2018  Robotics Mechanics and Control</li>
+            <li>ME426 - 2018  Applied Computational Methods In Mechanical Sciences</li>
+            <li>ME866 - 2018  Optimization Techniques</li>
+            <li>MA204 - 2019  Linear Algebra And Matrices</li>
+            <li>ME832 - 2019  Intelligent Systems</li>
+          </ul>
+        </p>
       </p>
-
-      <p>
-        <b>Courses, at a glance:</b>
-        <ul>
-          <li>ME252 - 2017  Computer Aided Engineering</li>
-          <li>ME322 - 2017  Automatic Control Engineering</li>
-          <li>ME320 - 2018  Automobile Engineering</li>
-          <li>ME827 - 2018  Theory And Practice Of Sensors And Actuators</li>
-          <li>ME865 - 2018  Robotics Mechanics and Control</li>
-          <li>ME426 - 2018  Applied Computational Methods In Mechanical Sciences</li>
-          <li>ME866 - 2018  Optimization Techniques</li>
-          <li>MA204 - 2019  Linear Algebra And Matrices</li>
-          <li>ME832 - 2019  Intelligent Systems</li>
-        </ul>
-      </p>
-      
-
     </div>
-
+    
     <div class="row header">
       <h4 id="nitkracing">NITKRacing</h4>
       <h5>January 2016 to April 2019</h5>
@@ -252,14 +271,12 @@
         <a href="https://iisc.ac.in/" target="_blank">
           <img src='images/iisc.jpeg' alt='image of NITKRacing members with their car' />
         </a> 
-        
       </div>
 
       <div class="eight columns">
         <a href="https://mecheng.iisc.ac.in/people/satish-v-kailas/" target="_blank">
           <img src='images/iiscdesign.jpg' alt='image of miniature fatigue testing rig design' />
         </a> 
-        
       </div>
     </div>
 

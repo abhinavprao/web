@@ -131,7 +131,7 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin-top: -2rem;
   margin-bottom: 2rem;
   font-weight: 300; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
@@ -146,13 +146,13 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h1 { font-size: 5.0rem; }
   h2 { font-size: 4.2rem; }
   h3 { font-size: 3.6rem; }
-  h4 { font-size: 3.0rem; }
+  h4 { font-size: 3.6rem; }
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 10; }
 
 
 /* Links
@@ -428,12 +428,12 @@ there.
 /* top Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .top-button{
-  height: 12px;
+  height: 15px;
   padding: 5px;
   text-align:center;
-  font-size: 8px;
+  font-size: 10px;
   line-height: 1px;
-  margin: 5px;
+  margin: 8px;
   font-weight: bolder;
   bottom:  0px;
 }
@@ -462,4 +462,15 @@ img {
 
 .footer{
   margin-bottom: 10rem;
+}
+
+.six.columns .custom-image {
+  display: block;
+  max-height: 200px; /* Adjust this value as needed */
+  width: auto; /* Maintain the aspect ratio */
+  border-radius: 7%;
+  height: auto;
+  padding: 1rem;
+  vertical-align: middle;
+  margin: 0 auto;
 }

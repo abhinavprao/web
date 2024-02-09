@@ -41,6 +41,7 @@ window.onload = function() {
 		drawRect(0,0,canvas.width,canvas.height,'white');
 		drawFrame(frame,cellSize,cellColor);
 		firstStart=false;
+		
 		if (start){
 		frame = nextFrame;
 		drawFrame(nextFrame,cellSize,cellNextColor);
@@ -126,7 +127,7 @@ function makeNextFrame(currentFrame){
 }
 
 function randomRestart(){
-	start=false;
+	start=true;
 	sketch=false;	
 	frame = makeFrame(canvas.width, canvas.height, cellSize);
 }
