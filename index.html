@@ -61,7 +61,7 @@
         <h1>
         <b>Abhinav Rao's website</b>
       </h1>
-      <p>Hello, I am a masters' student at Purdue University. I am specializing in physics-informed machine learning and applying it in bio-medical problem statements. Previously I have worked on and shipped products in the domain of automotive software, robotics and predictive diagnostics for cloud-connected vehicles.</p>
+      <p>Hello, I am a graduate student at Purdue University. I specialize in scientific machine learning and I am currently applying it in bio-medical problem statements. Previously I have worked on and shipped products in the domain of automotive software, robotics and predictive diagnostics for cloud-connected vehicles.</p>
       </div>
     </div>
 
@@ -98,11 +98,11 @@
     
     <div class="row">  
       <p>
-        At Purdue, I conduct my reseach as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of machine learning and physics. This involves leveraging theory from physics and mathematics to define model structures that can be effectively conditioned on data/measurements. Projects:
+        At Purdue, I work as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of scientific machine learning and advanced mechanical systems. This involves leveraging theory from physics and applied mathematics to define model structures that can be effectively conditioned on data/measurements. My projects involve physics informed machine learning, gaussian processes, bayesian inference, deep learning and applying them to develop parsimonious surrogate models for numerically dense simulators. Example Project:
       </p>
 
       <p>
-        <b>Physics informed Machine Learning:</b> My topics involve producing neural network-driven parsimonious surrogates for complex spatio-temporal fields/ PDEs. This domain of 'physics-informed machine learning' has shown rapid progress in the last decade alongside large-scale adoption and development of efficient deep learning tools such as XLA and Automatic Gradients. But there is significant work to be done in leveraging specific models that respect causality, fundamental symmetries and effectively combine multiple modalities of measurements. I hope to contribute to this effort. I usually write in python using PyTorch and Jax (Flax/ Equinox) for developing the models, and run the programs on Purdue's superclusters such as <a href="https://www.rcac.purdue.edu/compute/bell" target="_blank">Bell.</a>
+        <b>GP-POD:</b> The objective of this work was to develop a parsimonious surrogate forward model that trades off numerical accuracy for speed gains. This surrogate can then be used to conduct stastical analysis, like MCMC to characterize the posterior, sensitivity analysis, uncertainty quantification, etc. With this project the particular aim was to be able to reconstruct fields from PDE based numerical solvers with high accuracy, from a reduced space. The space reduction using methods such as Proper Orthogonal Decomposition alone is valuable but is also limited by linearity. We instead posit predicting the mode coefficients with Gaussian Process regression. This allows reducing dimensionality from <b>8M to 20</b>.: 
       </p>
       <a>
           <img src='images/prediction.gif' alt='predictions from surrogate' />
