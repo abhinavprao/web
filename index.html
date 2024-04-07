@@ -100,13 +100,15 @@
       <p>
         At Purdue, I work as a part of the <a href="https://www.predictivesciencelab.org/" target="_blank">Predictive Science Lab</a> under the guidance of Prof. Ilias Bilionis. Our lab works on the intersection of scientific machine learning and advanced mechanical systems. This involves leveraging theory from physics and applied mathematics to define model structures that can be effectively conditioned on data/measurements. My projects involve physics informed machine learning, gaussian processes, bayesian inference, deep learning and applying them to develop parsimonious surrogate models for numerically dense simulators. Example Project:
       </p>
-
+      <div id="gppod">
       <p>
-        <b>GP-POD:</b> The objective of this work was to develop a parsimonious surrogate forward model that trades off numerical accuracy for speed gains. This surrogate can then be used to conduct stastical analysis, like MCMC to characterize the posterior, sensitivity analysis, uncertainty quantification, etc. With this project the particular aim was to be able to reconstruct fields from PDE based numerical solvers with high accuracy, from a reduced space. The space reduction using methods such as Proper Orthogonal Decomposition alone is valuable but is also limited by linearity. We instead posit predicting the mode coefficients with Gaussian Process regression. This allows reducing dimensionality from <b>8M to 20</b>.: 
+        <b>GP-POD:</b> The objective of this work was to develop a parsimonious surrogate forward model that trades off numerical accuracy for computational gains. This surrogate can then be used to conduct stastical analysis, like MCMC to characterize the posterior, sensitivity analysis, uncertainty quantification, etc. With this project the particular aim was to be able to reconstruct fields from PDE based numerical solvers with high accuracy, from a reduced space. The space reduction using methods such as Proper Orthogonal Decomposition (POD) alone is valuable but is also limited by linearity. We instead posit predicting the mode coefficients with Gaussian Process regression with ARD. This allows reducing dimensionality from <b>8M to 20</b>. Field Reconstruction: 
       </p>
+
       <a>
           <img src='images/prediction.gif' alt='predictions from surrogate' />
       </a> 
+    </div>
       <p>
         I am particularly grateful to Eli Lilly Co. and their research collaboration with Purdue for funding my graduate study and providing a framework for effective research that is valuable to the community. My research is geared towards improving the effectiveness of injectable drug-delivery which is a perfect domain for physics-informed machine learning and uncertainty quantification given the various complexity of human body and the noisy measurements, relative to most AI research problems.   
       </p>
